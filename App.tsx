@@ -1,11 +1,13 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/screens/home-screen';
+import HomeScreen from './src/screens/HomeScreen';
+import OnBoardingScreens from './src/screens/OnBoardingScreens/component/OnboardingScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-        <HomeScreen/>
+        <OnBoardingScreens navigation={undefined}/>
       <StatusBar style="auto" />
     </View>
   );
